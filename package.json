@@ -1,7 +1,7 @@
 {
   "name": "react-hold-height",
-  "version": "0.1.1",
-  "description": "React component to maintain the highest height established by a child component even though it no longer exists in the browser window",
+  "version": "0.1.2",
+  "description": "React component to hold the highest height established by a child component even though it no longer exists in the browser window",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
