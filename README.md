@@ -1,4 +1,4 @@
-react-hold-height
+react-hold-height [![Travis](https://img.shields.io/travis/brurez/react-hold-height.svg)]()
 =================
 
 React component to hold the highest height established by a child component even though it no longer exists in the browser window.
@@ -7,7 +7,7 @@ React component to hold the highest height established by a child component even
 - [Basic](https://github.com/brurez/react-hold-height/blob/master/examples/basic/index.html)
 
 ## Installation
-    npm install --save react-hold-height
+    npm install --save react-hold-height    
     
 ## Overview & Basic Example
 `<HoldHeight />` components are mounted with height 0px (unless specified by the initialHeight prop).

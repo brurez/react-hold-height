@@ -1,13 +1,13 @@
 {
   "name": "react-hold-height",
-  "version": "0.2.0",
+  "version": "0.2.0-beta",
   "description": "React component to hold the highest height established by a child component even though it no longer exists in the browser window",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "compile": "babel src --loose --out-dir lib",
     "start": "webpack --watch",
-    "prepublish": "npm run clean && npm run compile",
+    "prepare": "npm run clean && npm run compile",
     "test": "mocha test/setup.js test/spec/*.js"
   },
   "repository": {
@@ -21,7 +21,7 @@
     "minHeight",
     "min-height"
   ],
-  "author": "Bruno de Rezende (brurez)",
+  "author": "Bruno de Rezende (brurez@hotmail.com)",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=15.0.0",
