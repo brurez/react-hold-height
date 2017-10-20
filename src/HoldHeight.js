@@ -5,7 +5,11 @@ import _ from 'lodash';
 class HoldHeight extends Component {
   constructor(props) {
     super(props);
-    this.state = { height: props.initialHeight || 0, windowWidth: 0 };
+    this.state = {
+      height: props.initialHeight || 0,
+      windowWidth: 0,
+      reset: !(props.resetOnWindowResize === false)
+    };
     this.resetHeight = _.debounce(this.resetHeight, 300);
   }
 
@@ -21,7 +25,7 @@ class HoldHeight extends Component {
   resetHeight() {
     if (
       this.state.windowWidth !== window.innerWidth &&
-      this.props.resetOnWindowResize
+      this.state.reset === true
     ) {
       this.setState({
         height: this.props.initialHeight || 0,
@@ -45,7 +49,12 @@ class HoldHeight extends Component {
 
   render() {
     return (
-      <div ref={me => {this.me = me}} style={{ minHeight: this.state.height }}>
+      <div
+        ref={me => {
+          this.me = me;
+        }}
+        style={{ minHeight: this.state.height }}
+      >
         {this.props.children}
       </div>
     );

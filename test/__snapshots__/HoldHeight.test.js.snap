@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HoldHeight /> render child with initialHeight prop 1`] = `
+<HoldHeight
+  initialHeight={200}
+>
+  <div
+    style={
+      Object {
+        "minHeight": 200,
+      }
+    }
+  >
+    <List3Items>
+      <ul>
+        <li>
+          This is a list
+        </li>
+        <li>
+          with 3 itens
+        </li>
+        <li>
+          it takes some space
+        </li>
+      </ul>
+    </List3Items>
+  </div>
+</HoldHeight>
+`;
+
+exports[`<HoldHeight /> render child with no props 1`] = `
+<HoldHeight>
+  <div
+    style={
+      Object {
+        "minHeight": 0,
+      }
+    }
+  >
+    <List3Items>
+      <ul>
+        <li>
+          This is a list
+        </li>
+        <li>
+          with 3 itens
+        </li>
+        <li>
+          it takes some space
+        </li>
+      </ul>
+    </List3Items>
+  </div>
+</HoldHeight>
+`;
