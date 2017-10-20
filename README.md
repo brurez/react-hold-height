@@ -1,11 +1,4 @@
-react-hold-height 
-[![Travis](https://img.shields.io/travis/brurez/react-hold-height.svg)](https://travis-ci.org/brurez/react-hold-height)
-[![npm](https://img.shields.io/npm/v/react-hold-height.svg)](https://www.npmjs.com/package/react-hold-height)
-[![npm](https://img.shields.io/npm/dw/react-hold-height.svg)](https://www.npmjs.com/package/react-hold-height)
-[![GitHub issues](https://img.shields.io/github/issues/brurez/react-hold-height.svg)](https://github.com/brurez/react-hold-height/issues)
-[![GitHub stars](https://img.shields.io/github/stars/brurez/react-hold-height.svg)](https://github.com/brurez/react-hold-height/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/brurez/react-hold-height/master/LICENSE)
-
+react-hold-height [![Travis](https://img.shields.io/travis/brurez/react-hold-height.svg)](https://travis-ci.org/brurez/react-hold-height) [![npm](https://img.shields.io/npm/v/react-hold-height.svg)](https://www.npmjs.com/package/react-hold-height) [![npm](https://img.shields.io/npm/dw/react-hold-height.svg)](https://www.npmjs.com/package/react-hold-height) [![GitHub issues](https://img.shields.io/github/issues/brurez/react-hold-height.svg)](https://github.com/brurez/react-hold-height/issues) [![GitHub stars](https://img.shields.io/github/stars/brurez/react-hold-height.svg)](https://github.com/brurez/react-hold-height/stargazers) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/brurez/react-hold-height/master/LICENSE)
 =================
 
 React component to hold the highest height established by a child component even though it no longer exists in the browser window.
