@@ -4,7 +4,8 @@ react-hold-height [![Travis](https://img.shields.io/travis/brurez/react-hold-hei
 React component to hold the highest height established by a child component even though it no longer exists in the browser window.
 
 #### Demos
-- [Basic](https://github.com/brurez/react-hold-height/blob/master/examples/basic/index.html)
+- [Basic](https://github.com/brurez/react-hold-height/blob/master/examples/basic/basic.js)
+- [Loading](https://github.com/brurez/react-hold-height/blob/master/examples/loading/loading.js)
 
 ## Installation
     npm install --save react-hold-height    

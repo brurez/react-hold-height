@@ -1,6 +1,6 @@
 {
   "name": "react-hold-height",
-  "version": "0.2.4",
+  "version": "0.3.1",
   "description": "React component to hold the highest height established by a child component even though it no longer exists in the browser window",
   "main": "lib/index.js",
   "scripts": {
