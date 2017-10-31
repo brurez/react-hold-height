@@ -53,7 +53,7 @@ class HoldHeight extends Component {
         ref={me => {
           this.me = me;
         }}
-        style={{ minHeight: this.state.height }}
+        style={_.merge(this.props.style, { minHeight: this.state.height })}
       >
         {this.props.children}
       </div>
