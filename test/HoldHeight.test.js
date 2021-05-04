@@ -9,15 +9,11 @@ import HoldHeight from '../src/index';
 
 describe('<HoldHeight />', () => {
 
-  const List3Items = props =>
+  const List3Items = () =>
     <ul>
       <li>This is a list</li>
       <li>with 3 itens</li>
       <li>it takes some space</li>
-    </ul>;
-  const List1Item = props =>
-    <ul>
-      <li>This is a small list</li>
     </ul>;
 
   it('render child with no props', () => {
