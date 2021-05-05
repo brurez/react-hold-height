@@ -1,32 +1,33 @@
-import React from 'react';
-import Enzyme, { shallow, render, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import React from "react";
+import { render, screen } from "@testing-library/react";
 
-// React 16 Enzyme adapter
-Enzyme.configure({ adapter: new Adapter() });
+import HoldHeight from "../src";
 
-import HoldHeight from '../src/index';
+describe("<HoldHeight />", () => {
+  const List3Items = () => (
+    <ul data-testid="list">
+      <li data-testid="list-item">This is a list</li>
+      <li data-testid="list-item">with 3 itens</li>
+      <li data-testid="list-item">it takes some space</li>
+    </ul>
+  );
 
-describe('<HoldHeight />', () => {
-
-  const List3Items = () =>
-    <ul>
-      <li>This is a list</li>
-      <li>with 3 itens</li>
-      <li>it takes some space</li>
-    </ul>;
-
-  it('render child with no props', () => {
-    const wrapper = mount(<HoldHeight><List3Items/></HoldHeight>);
-    expect(wrapper.find('li')).toHaveLength(3);
-    expect(wrapper).toMatchSnapshot();
+  it("render child with no props", () => {
+    render(
+      <HoldHeight>
+        <List3Items />
+      </HoldHeight>
+    );
+    expect(screen.getAllByTestId("list-item")).toHaveLength(3);
   });
 
-  it('render child with initialHeight prop', () => {
-    const wrapper = mount(<HoldHeight initialHeight={200}><List3Items/></HoldHeight>);
-    expect(wrapper.find('li')).toHaveLength(3);
-    expect(wrapper.props().initialHeight).toBe(200);
-    expect(wrapper).toMatchSnapshot();
+  it("render child with initialHeight prop", () => {
+    render(
+      <HoldHeight initialHeight={200}>
+        <List3Items />
+      </HoldHeight>
+    );
+    expect(screen.getAllByTestId("list-item")).toHaveLength(3);
+    expect(screen.getByTestId("list").parentNode.style.minHeight).toBe("200px");
   });
-
 });

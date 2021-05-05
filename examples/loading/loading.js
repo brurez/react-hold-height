@@ -82,7 +82,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HoldHeight initialHeight={120}>
+        <HoldHeight initialHeight={120} style={{ margin: 16 }}>
           {this.renderElements(this.state.page)}
         </HoldHeight>
 
